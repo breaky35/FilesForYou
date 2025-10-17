@@ -1,5 +1,5 @@
 {
-  "name": "ConvertX",
+  "name": "FilesForYou",
   "build": {
     "dockerfile": "Dockerfile"
   },
