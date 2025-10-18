@@ -1,5 +1,5 @@
 {
-  "name": "convertx-frontend",
+  "name": "FilesForYou-frontend",
   "version": "0.15.0",
   "scripts": {
     "dev": "bun run --watch src/index.tsx",

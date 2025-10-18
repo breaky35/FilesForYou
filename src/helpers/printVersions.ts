@@ -1,7 +1,7 @@
 import { exec } from "node:child_process";
 import { version } from "../../package.json";
 
-console.log(`ConvertX v${version}`);
+console.log(`FilesForYou v${version}`);
 
 if (process.env.NODE_ENV === "production") {
   exec("cat /etc/os-release", (error, stdout) => {

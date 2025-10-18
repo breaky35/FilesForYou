@@ -2,17 +2,17 @@
 
 # FilesForYou
 
-[![Docker](https://github.com/C4illin/ConvertX/actions/workflows/docker-publish.yml/badge.svg?branch=main)](https://github.com/C4illin/ConvertX/actions/workflows/docker-publish.yml)
-[![ghcr.io Pulls](https://img.shields.io/badge/dynamic/json?logo=github&url=https%3A%2F%2Fipitio.github.io%2Fbackage%2FC4illin%2FConvertX%2Fconvertx.json&query=%24.downloads&label=ghcr.io%20pulls&cacheSeconds=14400)](https://github.com/C4illin/ConvertX/pkgs/container/ConvertX)
-[![Docker Pulls](https://img.shields.io/docker/pulls/c4illin/convertx?style=flat&logo=docker&label=dockerhub%20pulls&link=https%3A%2F%2Fhub.docker.com%2Frepository%2Fdocker%2Fc4illin%2Fconvertx%2Fgeneral)](https://hub.docker.com/r/c4illin/convertx)
-[![GitHub Release](https://img.shields.io/github/v/release/C4illin/ConvertX)](https://github.com/C4illin/ConvertX/pkgs/container/convertx)
-![GitHub commits since latest release](https://img.shields.io/github/commits-since/C4illin/ConvertX/latest)
-![GitHub repo size](https://img.shields.io/github/repo-size/C4illin/ConvertX)
-![Docker container size](https://ghcr-badge.egpl.dev/c4illin/convertx/size?color=%230375b6&tag=latest&label=image+size&trim=)
+[![Docker](https://github.com/C4illin/FilesForYou/actions/workflows/docker-publish.yml/badge.svg?branch=main)](https://github.com/C4illin/FilesForYou/actions/workflows/docker-publish.yml)
+[![ghcr.io Pulls](https://img.shields.io/badge/dynamic/json?logo=github&url=https%3A%2F%2Fipitio.github.io%2Fbackage%2FC4illin%2FFilesForYou%2FFilesForYou.json&query=%24.downloads&label=ghcr.io%20pulls&cacheSeconds=14400)](https://github.com/C4illin/FilesForYou/pkgs/container/FilesForYou)
+[![Docker Pulls](https://img.shields.io/docker/pulls/c4illin/FilesForYou?style=flat&logo=docker&label=dockerhub%20pulls&link=https%3A%2F%2Fhub.docker.com%2Frepository%2Fdocker%2Fc4illin%2FFilesForYou%2Fgeneral)](https://hub.docker.com/r/c4illin/FilesForYou)
+[![GitHub Release](https://img.shields.io/github/v/release/C4illin/FilesForYou)](https://github.com/C4illin/FilesForYou/pkgs/container/FilesForYou)
+![GitHub commits since latest release](https://img.shields.io/github/commits-since/C4illin/FilesForYou/latest)
+![GitHub repo size](https://img.shields.io/github/repo-size/C4illin/FilesForYou)
+![Docker container size](https://ghcr-badge.egpl.dev/c4illin/FilesForYou/size?color=%230375b6&tag=latest&label=image+size&trim=)
 
-<a href="https://trendshift.io/repositories/13818" target="_blank"><img src="https://trendshift.io/api/badge/repositories/13818" alt="C4illin%2FConvertX | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+<a href="https://trendshift.io/repositories/13818" target="_blank"><img src="https://trendshift.io/api/badge/repositories/13818" alt="C4illin%2FFilesForYou | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
 
-<!-- ![Dev image size](https://ghcr-badge.egpl.dev/c4illin/convertx/size?color=%230375b6&tag=main&label=dev+image&trim=) -->
+<!-- ![Dev image size](https://ghcr-badge.egpl.dev/c4illin/FilesForYou/size?color=%230375b6&tag=main&label=dev+image&trim=) -->
 
 A self-hosted online file converter. Supports over a thousand different formats. Written with TypeScript, Bun and Elysia.
 
@@ -58,9 +58,9 @@ Any missing converter? Open an issue or pull request!
 ```yml
 # docker-compose.yml
 services:
-  convertx:
-    image: ghcr.io/c4illin/convertx
-    container_name: convertx
+  FilesForYou:
+    image: ghcr.io/c4illin/FilesForYou
+    container_name: FilesForYou
     restart: unless-stopped
     ports:
       - "3000:3000"
@@ -74,7 +74,7 @@ services:
 or
 
 ```bash
-docker run -p 3000:3000 -v ./data:/app/data ghcr.io/c4illin/convertx
+docker run -p 3000:3000 -v ./data:/app/data ghcr.io/c4illin/FilesForYou
 ```
 
 Then visit `http://localhost:3000` in your browser and create your account. Don't leave it unconfigured and open, as anyone can register the first account.
@@ -103,17 +103,17 @@ All are optional, JWT_SECRET is recommended to be set.
 
 There is a `:latest` tag that is updated with every release and a `:main` tag that is updated with every push to the main branch. `:latest` is recommended for normal use.
 
-The image is available on [GitHub Container Registry](https://github.com/C4illin/ConvertX/pkgs/container/ConvertX) and [Docker Hub](https://hub.docker.com/r/c4illin/convertx).
+The image is available on [GitHub Container Registry](https://github.com/C4illin/FilesForYou/pkgs/container/FilesForYou) and [Docker Hub](https://hub.docker.com/r/c4illin/FilesForYou).
 
 | Image                                  | What it is                       |
 | -------------------------------------- | -------------------------------- |
-| `image: ghcr.io/c4illin/convertx`      | The latest release on ghcr       |
-| `image: ghcr.io/c4illin/convertx:main` | The latest commit on ghcr        |
-| `image: c4illin/convertx`              | The latest release on docker hub |
-| `image: c4illin/convertx:main`         | The latest commit on docker hub  |
+| `image: ghcr.io/c4illin/FilesForYou`      | The latest release on ghcr       |
+| `image: ghcr.io/c4illin/FilesForYou:main` | The latest commit on ghcr        |
+| `image: c4illin/FilesForYou`              | The latest release on docker hub |
+| `image: c4illin/FilesForYou:main`         | The latest commit on docker hub  |
 
-![Release image size](https://ghcr-badge.egpl.dev/c4illin/convertx/size?color=%230375b6&tag=latest&label=release+image&trim=)
-![Dev image size](https://ghcr-badge.egpl.dev/c4illin/convertx/size?color=%230375b6&tag=main&label=dev+image&trim=)
+![Release image size](https://ghcr-badge.egpl.dev/c4illin/FilesForYou/size?color=%230375b6&tag=latest&label=release+image&trim=)
+![Dev image size](https://ghcr-badge.egpl.dev/c4illin/FilesForYou/size?color=%230375b6&tag=main&label=dev+image&trim=)
 
 <!-- Dockerhub was introduced in 0.9.0 and older releases -->
 
@@ -122,13 +122,13 @@ The image is available on [GitHub Container Registry](https://github.com/C4illin
 > [!NOTE]
 > These are written by other people, and may be outdated, incorrect or wrong.
 
-Tutorial in french: <https://belginux.com/installer-convertx-avec-docker/>
+Tutorial in french: <https://belginux.com/installer-FilesForYou-avec-docker/>
 
 Tutorial in chinese: <https://xzllll.com/24092901/>
 
 ## Screenshots
 
-![ConvertX Preview](images/preview.png)
+![FilesForYou Preview](images/preview.png)
 
 ## Development
 
@@ -143,16 +143,16 @@ Use [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/#summar
 
 ## Contributors
 
-<a href="https://github.com/C4illin/ConvertX/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=C4illin/ConvertX" alt="Image with all contributors"/>
+<a href="https://github.com/C4illin/FilesForYou/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=C4illin/FilesForYou" alt="Image with all contributors"/>
 </a>
 
 ## Star History
 
-<a href="https://github.com/C4illin/ConvertX/stargazers">
+<a href="https://github.com/C4illin/FilesForYou/stargazers">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=C4illin/ConvertX&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=C4illin/ConvertX&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=C4illin/ConvertX&type=Date" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=C4illin/FilesForYou&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=C4illin/FilesForYou&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=C4illin/FilesForYou&type=Date" />
  </picture>
 </a>
