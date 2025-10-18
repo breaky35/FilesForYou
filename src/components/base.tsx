@@ -2,7 +2,7 @@ import { version } from "../../package.json";
 
 export const BaseHtml = ({
   children,
-  title = "ConvertX",
+  title = "FilesForYou",
   webroot = "",
 }: {
   children: JSX.Element;
@@ -27,13 +27,13 @@ export const BaseHtml = ({
         <div class="p-4 text-center text-sm text-neutral-500">
           <span>Powered by </span>
           <a
-            href="https://github.com/C4illin/ConvertX"
+            href="https://github.com/breaky35/FilesForYou"
             class={`
               text-neutral-400
               hover:text-accent-500
             `}
           >
-            ConvertX{" "}
+            FilesForYou{" "}
           </a>
           <span safe>v{version || ""}</span>
         </div>
